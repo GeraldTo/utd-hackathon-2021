@@ -1,0 +1,816 @@
+{
+  "type": "CURRENT_STATE",
+  "flowRateIn": 709999.8466765851,
+  "operations": [
+    {
+      "name": "Nachos Pillage Milwaukee",
+      "id": "nachos_pillage_milwaukee",
+      "revenueStructure": [
+        {
+          "flowPerDay": 0,
+          "dollarsPerDay": 0
+        },
+        {
+          "flowPerDay": 10000,
+          "dollarsPerDay": 12401.18569198354
+        },
+        {
+          "flowPerDay": 20000,
+          "dollarsPerDay": 24505.185194421807
+        },
+        {
+          "flowPerDay": 30000,
+          "dollarsPerDay": 39384.357844937214
+        },
+        {
+          "flowPerDay": 40000,
+          "dollarsPerDay": 49082.49510374392
+        },
+        {
+          "flowPerDay": 50000,
+          "dollarsPerDay": 58581.56389616938
+        },
+        {
+          "flowPerDay": 60000,
+          "dollarsPerDay": 74243.85895587214
+        },
+        {
+          "flowPerDay": 70000,
+          "dollarsPerDay": 76011.69801082932
+        },
+        {
+          "flowPerDay": 80000,
+          "dollarsPerDay": 88944.28928904886
+        },
+        {
+          "flowPerDay": 90000,
+          "dollarsPerDay": -11751.477283670847
+        },
+        {
+          "flowPerDay": 100000,
+          "dollarsPerDay": -12547.373398846086
+        },
+        {
+          "flowPerDay": 110000,
+          "dollarsPerDay": -15945.51544664299
+        },
+        {
+          "flowPerDay": 120000,
+          "dollarsPerDay": -16923.91390874557
+        },
+        {
+          "flowPerDay": 130000,
+          "dollarsPerDay": -17850.16630589922
+        },
+        {
+          "flowPerDay": 140000,
+          "dollarsPerDay": -18154.44525279093
+        },
+        {
+          "flowPerDay": 150000,
+          "dollarsPerDay": -19381.30186095182
+        },
+        {
+          "flowPerDay": 160000,
+          "dollarsPerDay": -20742.564864053627
+        },
+        {
+          "flowPerDay": 170000,
+          "dollarsPerDay": -20774.39034409187
+        },
+        {
+          "flowPerDay": 180000,
+          "dollarsPerDay": -26588.272368142254
+        },
+        {
+          "flowPerDay": 190000,
+          "dollarsPerDay": -26358.065137037112
+        },
+        {
+          "flowPerDay": 200000,
+          "dollarsPerDay": -28582.775004129733
+        }
+      ]
+    },
+    {
+      "name": "Nanananananananana.. Pat Man!",
+      "id": "nanananananananana.._pat_man!",
+      "revenueStructure": [
+        {
+          "flowPerDay": 0,
+          "dollarsPerDay": 0
+        },
+        {
+          "flowPerDay": 10000,
+          "dollarsPerDay": 1432.5145970890258
+        },
+        {
+          "flowPerDay": 20000,
+          "dollarsPerDay": 5565.825705018695
+        },
+        {
+          "flowPerDay": 30000,
+          "dollarsPerDay": 12373.053849860027
+        },
+        {
+          "flowPerDay": 40000,
+          "dollarsPerDay": 23568.33469676019
+        },
+        {
+          "flowPerDay": 50000,
+          "dollarsPerDay": 34420.17306098526
+        },
+        {
+          "flowPerDay": 60000,
+          "dollarsPerDay": 47326.00640692585
+        },
+        {
+          "flowPerDay": 70000,
+          "dollarsPerDay": 68031.76948532759
+        },
+        {
+          "flowPerDay": 80000,
+          "dollarsPerDay": 77977.4032541374
+        },
+        {
+          "flowPerDay": 90000,
+          "dollarsPerDay": -11227.34303250076
+        },
+        {
+          "flowPerDay": 100000,
+          "dollarsPerDay": -13057.196981856498
+        },
+        {
+          "flowPerDay": 110000,
+          "dollarsPerDay": -13802.110738730695
+        },
+        {
+          "flowPerDay": 120000,
+          "dollarsPerDay": -17395.107759974173
+        },
+        {
+          "flowPerDay": 130000,
+          "dollarsPerDay": -18334.2400678077
+        },
+        {
+          "flowPerDay": 140000,
+          "dollarsPerDay": -19223.256021737623
+        },
+        {
+          "flowPerDay": 150000,
+          "dollarsPerDay": -19451.191342275997
+        },
+        {
+          "flowPerDay": 160000,
+          "dollarsPerDay": -20673.38865168194
+        },
+        {
+          "flowPerDay": 170000,
+          "dollarsPerDay": -22038.97516805698
+        },
+        {
+          "flowPerDay": 180000,
+          "dollarsPerDay": -21996.41330550904
+        },
+        {
+          "flowPerDay": 190000,
+          "dollarsPerDay": -28065.398610816825
+        },
+        {
+          "flowPerDay": 200000,
+          "dollarsPerDay": -27745.33172319696
+        }
+      ]
+    },
+    {
+      "name": "No Partying Mariachis",
+      "id": "no_partying_mariachis",
+      "revenueStructure": [
+        {
+          "flowPerDay": 0,
+          "dollarsPerDay": 0
+        },
+        {
+          "flowPerDay": 10000,
+          "dollarsPerDay": 1432.5145970890258
+        },
+        {
+          "flowPerDay": 20000,
+          "dollarsPerDay": 5565.825705018695
+        },
+        {
+          "flowPerDay": 30000,
+          "dollarsPerDay": 12373.053849860027
+        },
+        {
+          "flowPerDay": 40000,
+          "dollarsPerDay": 23568.33469676019
+        },
+        {
+          "flowPerDay": 50000,
+          "dollarsPerDay": 34420.17306098526
+        },
+        {
+          "flowPerDay": 60000,
+          "dollarsPerDay": 47326.00640692585
+        },
+        {
+          "flowPerDay": 70000,
+          "dollarsPerDay": 68031.76948532759
+        },
+        {
+          "flowPerDay": 80000,
+          "dollarsPerDay": 77977.4032541374
+        },
+        {
+          "flowPerDay": 90000,
+          "dollarsPerDay": -11227.34303250076
+        },
+        {
+          "flowPerDay": 100000,
+          "dollarsPerDay": -13057.196981856498
+        },
+        {
+          "flowPerDay": 110000,
+          "dollarsPerDay": -13802.110738730695
+        },
+        {
+          "flowPerDay": 120000,
+          "dollarsPerDay": -17395.107759974173
+        },
+        {
+          "flowPerDay": 130000,
+          "dollarsPerDay": -18334.2400678077
+        },
+        {
+          "flowPerDay": 140000,
+          "dollarsPerDay": -19223.256021737623
+        },
+        {
+          "flowPerDay": 150000,
+          "dollarsPerDay": -19451.191342275997
+        },
+        {
+          "flowPerDay": 160000,
+          "dollarsPerDay": -20673.38865168194
+        },
+        {
+          "flowPerDay": 170000,
+          "dollarsPerDay": -22038.97516805698
+        },
+        {
+          "flowPerDay": 180000,
+          "dollarsPerDay": -21996.41330550904
+        },
+        {
+          "flowPerDay": 190000,
+          "dollarsPerDay": -28065.398610816825
+        },
+        {
+          "flowPerDay": 200000,
+          "dollarsPerDay": -27745.33172319696
+        }
+      ]
+    },
+    {
+      "name": "npm provides modules",
+      "id": "npm_provides_modules",
+      "revenueStructure": [
+        {
+          "flowPerDay": 0,
+          "dollarsPerDay": 0
+        },
+        {
+          "flowPerDay": 10000,
+          "dollarsPerDay": 12401.18569198354
+        },
+        {
+          "flowPerDay": 20000,
+          "dollarsPerDay": 24505.185194421807
+        },
+        {
+          "flowPerDay": 30000,
+          "dollarsPerDay": 39384.357844937214
+        },
+        {
+          "flowPerDay": 40000,
+          "dollarsPerDay": 49082.49510374392
+        },
+        {
+          "flowPerDay": 50000,
+          "dollarsPerDay": 58581.56389616938
+        },
+        {
+          "flowPerDay": 60000,
+          "dollarsPerDay": 74243.85895587214
+        },
+        {
+          "flowPerDay": 70000,
+          "dollarsPerDay": 76011.69801082932
+        },
+        {
+          "flowPerDay": 80000,
+          "dollarsPerDay": 88944.28928904886
+        },
+        {
+          "flowPerDay": 90000,
+          "dollarsPerDay": 104733.60803844218
+        },
+        {
+          "flowPerDay": 100000,
+          "dollarsPerDay": -12547.373398846086
+        },
+        {
+          "flowPerDay": 110000,
+          "dollarsPerDay": -15945.51544664299
+        },
+        {
+          "flowPerDay": 120000,
+          "dollarsPerDay": -16923.91390874557
+        },
+        {
+          "flowPerDay": 130000,
+          "dollarsPerDay": -17850.16630589922
+        },
+        {
+          "flowPerDay": 140000,
+          "dollarsPerDay": -18154.44525279093
+        },
+        {
+          "flowPerDay": 150000,
+          "dollarsPerDay": -19381.30186095182
+        },
+        {
+          "flowPerDay": 160000,
+          "dollarsPerDay": -20742.564864053627
+        },
+        {
+          "flowPerDay": 170000,
+          "dollarsPerDay": -20774.39034409187
+        },
+        {
+          "flowPerDay": 180000,
+          "dollarsPerDay": -26588.272368142254
+        },
+        {
+          "flowPerDay": 190000,
+          "dollarsPerDay": -26358.065137037112
+        },
+        {
+          "flowPerDay": 200000,
+          "dollarsPerDay": -28582.775004129733
+        }
+      ]
+    },
+    {
+      "name": "Naughty Praying Mantis",
+      "id": "naughty_praying_mantis",
+      "revenueStructure": [
+        {
+          "flowPerDay": 0,
+          "dollarsPerDay": 0
+        },
+        {
+          "flowPerDay": 10000,
+          "dollarsPerDay": 122841.47549306831
+        },
+        {
+          "flowPerDay": 20000,
+          "dollarsPerDay": -33270.53618090704
+        },
+        {
+          "flowPerDay": 30000,
+          "dollarsPerDay": -120270.18664370454
+        },
+        {
+          "flowPerDay": 40000,
+          "dollarsPerDay": 64135.20256502018
+        },
+        {
+          "flowPerDay": 50000,
+          "dollarsPerDay": 90549.34169863908
+        },
+        {
+          "flowPerDay": 60000,
+          "dollarsPerDay": -90890.62583931067
+        },
+        {
+          "flowPerDay": 70000,
+          "dollarsPerDay": -62057.54257358127
+        },
+        {
+          "flowPerDay": 80000,
+          "dollarsPerDay": 99083.0394976591
+        },
+        {
+          "flowPerDay": 90000,
+          "dollarsPerDay": 38076.01043009165
+        },
+        {
+          "flowPerDay": 100000,
+          "dollarsPerDay": -109689.33823769137
+        },
+        {
+          "flowPerDay": 110000,
+          "dollarsPerDay": -7533.258516592666
+        },
+        {
+          "flowPerDay": 120000,
+          "dollarsPerDay": 125300.06071352652
+        },
+        {
+          "flowPerDay": 130000,
+          "dollarsPerDay": -26305.416693857132
+        },
+        {
+          "flowPerDay": 140000,
+          "dollarsPerDay": -108399.00469984574
+        },
+        {
+          "flowPerDay": 150000,
+          "dollarsPerDay": 54361.77804240623
+        },
+        {
+          "flowPerDay": 160000,
+          "dollarsPerDay": 93419.10250044074
+        },
+        {
+          "flowPerDay": 170000,
+          "dollarsPerDay": -75553.1762942201
+        },
+        {
+          "flowPerDay": 180000,
+          "dollarsPerDay": -81406.84389393123
+        },
+        {
+          "flowPerDay": 190000,
+          "dollarsPerDay": 106727.74408378702
+        },
+        {
+          "flowPerDay": 200000,
+          "dollarsPerDay": 48622.2757357176
+        }
+      ]
+    },
+    {
+      "name": "Norvell's Public Machinations",
+      "id": "norvell's_public_machinations",
+      "revenueStructure": [
+        {
+          "flowPerDay": 0,
+          "dollarsPerDay": 0
+        },
+        {
+          "flowPerDay": 10000,
+          "dollarsPerDay": 123269.80923573289
+        },
+        {
+          "flowPerDay": 20000,
+          "dollarsPerDay": -26607.260272792755
+        },
+        {
+          "flowPerDay": 30000,
+          "dollarsPerDay": -124267.57995440632
+        },
+        {
+          "flowPerDay": 40000,
+          "dollarsPerDay": 52021.09868967119
+        },
+        {
+          "flowPerDay": 50000,
+          "dollarsPerDay": 100052.44549526749
+        },
+        {
+          "flowPerDay": 60000,
+          "dollarsPerDay": -75543.9848873844
+        },
+        {
+          "flowPerDay": 70000,
+          "dollarsPerDay": -78246.99154431872
+        },
+        {
+          "flowPerDay": 80000,
+          "dollarsPerDay": 85378.55566759671
+        },
+        {
+          "flowPerDay": 90000,
+          "dollarsPerDay": 64332.13342328776
+        },
+        {
+          "flowPerDay": 100000,
+          "dollarsPerDay": -99380.54062037451
+        },
+        {
+          "flowPerDay": 110000,
+          "dollarsPerDay": -46338.03328592333
+        },
+        {
+          "flowPerDay": 120000,
+          "dollarsPerDay": 121552.78766811066
+        },
+        {
+          "flowPerDay": 130000,
+          "dollarsPerDay": 18038.81872339007
+        },
+        {
+          "flowPerDay": 140000,
+          "dollarsPerDay": -115485.29324498899
+        },
+        {
+          "flowPerDay": 150000,
+          "dollarsPerDay": 8164.0055085588665
+        },
+        {
+          "flowPerDay": 160000,
+          "dollarsPerDay": 113665.884720182
+        },
+        {
+          "flowPerDay": 170000,
+          "dollarsPerDay": -31128.30558317036
+        },
+        {
+          "flowPerDay": 180000,
+          "dollarsPerDay": -121290.5777030853
+        },
+        {
+          "flowPerDay": 190000,
+          "dollarsPerDay": 60223.11279621435
+        },
+        {
+          "flowPerDay": 200000,
+          "dollarsPerDay": 103796.55147085203
+        }
+      ]
+    },
+    {
+      "name": "Nonviolent Pigeon Manifestation",
+      "id": "nonviolent_pigeon_manifestation",
+      "revenueStructure": [
+        {
+          "flowPerDay": 0,
+          "dollarsPerDay": 0
+        },
+        {
+          "flowPerDay": 10000,
+          "dollarsPerDay": 12401.18569198354
+        },
+        {
+          "flowPerDay": 20000,
+          "dollarsPerDay": 24505.185194421807
+        },
+        {
+          "flowPerDay": 30000,
+          "dollarsPerDay": 39384.357844937214
+        },
+        {
+          "flowPerDay": 40000,
+          "dollarsPerDay": 49082.49510374392
+        },
+        {
+          "flowPerDay": 50000,
+          "dollarsPerDay": 58581.56389616938
+        },
+        {
+          "flowPerDay": 60000,
+          "dollarsPerDay": 74243.85895587214
+        },
+        {
+          "flowPerDay": 70000,
+          "dollarsPerDay": 76011.69801082932
+        },
+        {
+          "flowPerDay": 80000,
+          "dollarsPerDay": -9979.860473334009
+        },
+        {
+          "flowPerDay": 90000,
+          "dollarsPerDay": -11751.477283670847
+        },
+        {
+          "flowPerDay": 100000,
+          "dollarsPerDay": -12547.373398846086
+        },
+        {
+          "flowPerDay": 110000,
+          "dollarsPerDay": -15945.51544664299
+        },
+        {
+          "flowPerDay": 120000,
+          "dollarsPerDay": -16923.91390874557
+        },
+        {
+          "flowPerDay": 130000,
+          "dollarsPerDay": -17850.16630589922
+        },
+        {
+          "flowPerDay": 140000,
+          "dollarsPerDay": -18154.44525279093
+        },
+        {
+          "flowPerDay": 150000,
+          "dollarsPerDay": -19381.30186095182
+        },
+        {
+          "flowPerDay": 160000,
+          "dollarsPerDay": -20742.564864053627
+        },
+        {
+          "flowPerDay": 170000,
+          "dollarsPerDay": -20774.39034409187
+        },
+        {
+          "flowPerDay": 180000,
+          "dollarsPerDay": -26588.272368142254
+        },
+        {
+          "flowPerDay": 190000,
+          "dollarsPerDay": -26358.065137037112
+        },
+        {
+          "flowPerDay": 200000,
+          "dollarsPerDay": -28582.775004129733
+        }
+      ]
+    },
+    {
+      "name": "Nano Pico Micro",
+      "id": "nano_pico_micro",
+      "revenueStructure": [
+        {
+          "flowPerDay": 0,
+          "dollarsPerDay": 0
+        },
+        {
+          "flowPerDay": 10000,
+          "dollarsPerDay": 121378.4094223285
+        },
+        {
+          "flowPerDay": 20000,
+          "dollarsPerDay": 49165.90165477349
+        },
+        {
+          "flowPerDay": 30000,
+          "dollarsPerDay": -106896.23429472184
+        },
+        {
+          "flowPerDay": 40000,
+          "dollarsPerDay": -90200.55357332376
+        },
+        {
+          "flowPerDay": 50000,
+          "dollarsPerDay": 60091.06515573613
+        },
+        {
+          "flowPerDay": 60000,
+          "dollarsPerDay": 116979.01788701177
+        },
+        {
+          "flowPerDay": 70000,
+          "dollarsPerDay": -13606.975864428603
+        },
+        {
+          "flowPerDay": 80000,
+          "dollarsPerDay": -110817.51642418781
+        },
+        {
+          "flowPerDay": 90000,
+          "dollarsPerDay": -32971.2196943198
+        },
+        {
+          "flowPerDay": 100000,
+          "dollarsPerDay": 98472.38320110405
+        },
+        {
+          "flowPerDay": 110000,
+          "dollarsPerDay": 83244.92566385424
+        },
+        {
+          "flowPerDay": 120000,
+          "dollarsPerDay": -77479.15703978947
+        },
+        {
+          "flowPerDay": 130000,
+          "dollarsPerDay": -109777.53078930624
+        },
+        {
+          "flowPerDay": 140000,
+          "dollarsPerDay": 28735.65072201866
+        },
+        {
+          "flowPerDay": 150000,
+          "dollarsPerDay": 115039.98531403874
+        },
+        {
+          "flowPerDay": 160000,
+          "dollarsPerDay": 18593.16883528517
+        },
+        {
+          "flowPerDay": 170000,
+          "dollarsPerDay": -101616.55178284775
+        },
+        {
+          "flowPerDay": 180000,
+          "dollarsPerDay": -71542.07777719523
+        },
+        {
+          "flowPerDay": 190000,
+          "dollarsPerDay": 87811.08490139239
+        },
+        {
+          "flowPerDay": 200000,
+          "dollarsPerDay": 106304.87651547376
+        }
+      ]
+    },
+    {
+      "name": "Nanananananananana.. Pat Man!",
+      "id": "nanananananananana.._pat_man!",
+      "revenueStructure": [
+        {
+          "flowPerDay": 0,
+          "dollarsPerDay": 0
+        },
+        {
+          "flowPerDay": 10000,
+          "dollarsPerDay": 12401.18569198354
+        },
+        {
+          "flowPerDay": 20000,
+          "dollarsPerDay": 24505.185194421807
+        },
+        {
+          "flowPerDay": 30000,
+          "dollarsPerDay": 39384.357844937214
+        },
+        {
+          "flowPerDay": 40000,
+          "dollarsPerDay": 49082.49510374392
+        },
+        {
+          "flowPerDay": 50000,
+          "dollarsPerDay": 58581.56389616938
+        },
+        {
+          "flowPerDay": 60000,
+          "dollarsPerDay": 74243.85895587214
+        },
+        {
+          "flowPerDay": 70000,
+          "dollarsPerDay": 76011.69801082932
+        },
+        {
+          "flowPerDay": 80000,
+          "dollarsPerDay": -9979.860473334009
+        },
+        {
+          "flowPerDay": 90000,
+          "dollarsPerDay": -11751.477283670847
+        },
+        {
+          "flowPerDay": 100000,
+          "dollarsPerDay": -12547.373398846086
+        },
+        {
+          "flowPerDay": 110000,
+          "dollarsPerDay": -15945.51544664299
+        },
+        {
+          "flowPerDay": 120000,
+          "dollarsPerDay": -16923.91390874557
+        },
+        {
+          "flowPerDay": 130000,
+          "dollarsPerDay": -17850.16630589922
+        },
+        {
+          "flowPerDay": 140000,
+          "dollarsPerDay": -18154.44525279093
+        },
+        {
+          "flowPerDay": 150000,
+          "dollarsPerDay": -19381.30186095182
+        },
+        {
+          "flowPerDay": 160000,
+          "dollarsPerDay": -20742.564864053627
+        },
+        {
+          "flowPerDay": 170000,
+          "dollarsPerDay": -20774.39034409187
+        },
+        {
+          "flowPerDay": 180000,
+          "dollarsPerDay": -26588.272368142254
+        },
+        {
+          "flowPerDay": 190000,
+          "dollarsPerDay": -26358.065137037112
+        },
+        {
+          "flowPerDay": 200000,
+          "dollarsPerDay": -28582.775004129733
+        }
+      ]
+    }
+  ]
+}
