@@ -32,11 +32,15 @@ export type ClientResponse = {
 }[];
 
 // finds max dollarsPerDay value within revenueStructure
-function maxVal(op: WaterOperation){
+function maxVal(op: WaterOperation, percLim : number){
   const maxPrice = Math.max.apply(Math, op.revenueStructure.map(function(p) {return p.dollarsPerDay;}));
-  const maxFlow = op.revenueStructure.find(function(p) { return p.dollarsPerDay === maxPrice})?.flowPerDay;
+  var maxFlow = op.revenueStructure.find(function(p) { return p.dollarsPerDay === maxPrice})?.flowPerDay;
   if (!maxFlow) {
     return 0;
+  }
+  if (maxFlow > percLim)
+  {
+    maxFlow = percLim;
   }
   return maxFlow;
 }
@@ -57,10 +61,11 @@ function overload(currFlow: number, desFlow: number, maxFlow: number, opLeft: nu
 export function processRequest(request: ServerRequest): ClientResponse {
   //calculate maximum flow, leave some flow free
   const maxFlow = request.flowRateIn - (10 * request.operations.length);
+  const percLim = request.flowRateIn * .25;
   var opLeft = request.operations.length;
   var currFlow = 0;
   return request.operations.map(operation => {
-    const flow = overload(currFlow, maxVal(operation), maxFlow, opLeft);
+    const flow = overload(currFlow, maxVal(operation, percLim), maxFlow, opLeft);
     currFlow += flow;
     opLeft--;
     return {
