@@ -52,7 +52,6 @@ export default function Body() {
       ws.close()
     }
   }, [])
-  // displays tabs on main page for data and logs
   return (
     <div className={styles.Body}>
       <Tabs defaultActiveKey="data">

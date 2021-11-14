@@ -4,10 +4,7 @@ import {
   ServerRequest,
   ServerResponse,
 } from '../../../optimization'
-import styles from './DataTab.module.css'
 import BodyText from './BodyText'
-import Request from './Request'
-import { request } from 'http'
 
 export interface DataTabProps {
   request: null | ServerRequest
@@ -16,10 +13,8 @@ export interface DataTabProps {
 }
 
 export default function DataTab(props: DataTabProps) {
-  // will display request, response, amd result data
   return (
-    <div className={styles.DataTab}>
-      <Request request={props.request} />
+    <div>
       <BodyText
         data={props.request}
         divText={'1.) Server Sends Current State of the System:'}
