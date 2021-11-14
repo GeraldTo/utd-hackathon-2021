@@ -1,3 +1,4 @@
+//import { FlowFlags } from "typescript";
 
 export interface Point {
   flowPerDay: number,
@@ -30,13 +31,41 @@ export type ClientResponse = {
   flowRate: number,
 }[];
 
-// You should do better!
+// finds max dollarsPerDay value within revenueStructure
+function maxVal(op: WaterOperation){
+  const maxPrice = Math.max.apply(Math, op.revenueStructure.map(function(p) {return p.dollarsPerDay;}));
+  const maxFlow = op.revenueStructure.find(function(p) { return p.dollarsPerDay === maxPrice})?.flowPerDay;
+  if (!maxFlow) {
+    return 0;
+  }
+  return maxFlow;
+}
+
+// ensures that the flow limit is not breached
+function overload(currFlow: number, desFlow: number, maxFlow: number, opLeft: number){
+  // minimum flow is equal split of residual maxFlow
+  var flow = (maxFlow - currFlow) / opLeft;
+
+  // check if desired flow exceeds max flow
+  if ((desFlow + currFlow) < maxFlow) {
+    flow = desFlow;
+  }
+  return flow;
+}
+
+// uses naive greedy algorithm to calculate flow per operation
 export function processRequest(request: ServerRequest): ClientResponse {
-  const evenDistribution = request.flowRateIn / request.operations.length;
+  //calculate maximum flow, leave some flow free
+  const maxFlow = request.flowRateIn - (10 * request.operations.length);
+  var opLeft = request.operations.length;
+  var currFlow = 0;
   return request.operations.map(operation => {
+    const flow = overload(currFlow, maxVal(operation), maxFlow, opLeft);
+    currFlow += flow;
+    opLeft--;
     return {
       operationId: operation.id,
-      flowRate: evenDistribution - 10,
+      flowRate: flow, //find flow rate
     }
   })
 }
