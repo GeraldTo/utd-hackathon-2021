@@ -11,7 +11,6 @@ export interface LogTabProps {
   response: null | ClientResponse
 }
 
-
 export default function LogTab(props: LogTabProps) {
   
   function addLog(x: null | ClientResponse){
