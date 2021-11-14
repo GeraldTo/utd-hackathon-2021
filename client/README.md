@@ -44,3 +44,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## This Project
+
+An application that processes real-time sensor data by optimizing and visualizing the distribution of water for operations. This project
+uses react, typescript, chart.js, and bootstrap in order to create an
+application that reacts to real-time data.
+
