@@ -15,8 +15,10 @@ export default function Response(props: ResponseProps) {
     const respIdList = props.response.map((respEl) => respEl.operationId)
     const data = {
       labels: respIdList.map(function (respId) {
-        const reqEl = props.request?.operations.filter((f) => f.id === respId)
-        return reqEl ? reqEl[0].name : ''
+        const reqEl = props.request
+          ? props.request?.operations.filter((f) => f.id === respId)
+          : [undefined]
+        return reqEl[0] !== undefined ? reqEl[0].name : ''
       }),
       datasets: [
         {
