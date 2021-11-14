@@ -24,12 +24,12 @@ export default function Logs(props: LogTabProps) {
           <thead>
             <tr>
               { props.response.map(function (e, i) {
-                  const result = e.operationId.replace(/([A-Z])/g, ' $1')
+                  const result = e.operationId.replace(/_/g, ' ')
                   const finalResult =
                     result.charAt(0).toUpperCase() + result.slice(1)
                   return <th key={i}>{finalResult}</th>
               })
-              };
+              }
             </tr>
           </thead>
           <tbody>
@@ -38,7 +38,7 @@ export default function Logs(props: LogTabProps) {
                 const element = e.flowRate
                 return <td key={i}>{Math.round(element * 100) / 100}</td>
               })
-              };
+              }
             </tr>
           </tbody>
         </Table>
