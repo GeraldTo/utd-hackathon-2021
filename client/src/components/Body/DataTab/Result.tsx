@@ -29,7 +29,12 @@ export default function Result(props: ResultProps) {
             <tr>
               {desired.map(function (e: string, i) {
                 const element = el[e as keyof object]
-                return <td key={i}>{Math.round(element * 100) / 100}</td>
+                return (
+                  <td key={i}>
+                    {i == 1 && '$'}
+                    {Math.round(element * 100) / 100}
+                  </td>
+                )
               })}
             </tr>
           </tbody>
