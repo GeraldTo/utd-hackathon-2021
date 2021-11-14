@@ -6,6 +6,8 @@ import {
   ServerResponse,
 } from '../../../optimization'
 import BodyText from '../DataTab/BodyText'
+import styles from '../DataTab/DataTab.module.css'
+import Logs from './Logs'
 
 export interface LogTabProps {
   response: null | ClientResponse
@@ -13,18 +15,11 @@ export interface LogTabProps {
 
 export default function LogTab(props: LogTabProps) {
   
-  function addLog(x: null | ClientResponse){
-    
-    return x;
-  }
+  
   
   return (
-    <div>
-      <h1>hello world </h1>
-      <BodyText
-      data={addLog(props.response)}
-      divText={'Server Logs'}
-    />
+    <div className={styles.DataTab}>
+      <Logs response={props.response} />
     </div>
   )
 }
