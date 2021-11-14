@@ -60,7 +60,7 @@ export default function Body() {
           <DataTab request={request} response={response} result={result} />
         </Tab>
         <Tab eventKey="logs" title="Logs">
-          <LogTab response={response}/>
+          <LogTab />
         </Tab>
       </Tabs>
     </div>
