@@ -12,15 +12,12 @@ const rand = () => Math.floor(Math.random() * 255)
 
 export default function Response(props: ResponseProps) {
   if (props.response) {
+    const respIdList = props.response.map((respEl) => respEl.operationId)
     const data = {
-      labels: props.response
-        ? props.response
-            .map((e) => e.operationId)
-            .map(
-              (e) =>
-                props.request?.operations.filter((f) => f.id === e)[0].name,
-            )
-        : [],
+      labels: respIdList.map(function (respId) {
+        const reqEl = props.request?.operations.filter((f) => f.id === respId)
+        return reqEl ? reqEl[0].name : ''
+      }),
       datasets: [
         {
           label: 'Current Dataset',
