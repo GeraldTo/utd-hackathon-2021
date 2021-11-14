@@ -1,4 +1,4 @@
-import { FlowFlags } from "typescript";
+//import { FlowFlags } from "typescript";
 
 export interface Point {
   flowPerDay: number,
@@ -42,8 +42,8 @@ function maxVal(op: WaterOperation){
 }
 
 // ensures that the flow limit is not breached
-function overload(currFlow: number, desFlow: number, maxFlow: number){
-  var flow = 10000;
+function overload(currFlow: number, desFlow: number, maxFlow: number, opLeft: number){
+  var flow = (maxFlow - currFlow) / opLeft;
   if ((desFlow + currFlow) < maxFlow) {
     flow = desFlow;
   }
@@ -53,13 +53,16 @@ function overload(currFlow: number, desFlow: number, maxFlow: number){
 // uses naive greedy algorithm to calculate flow per operation
 export function processRequest(request: ServerRequest): ClientResponse {
   //calculate maximum flow, leave some flow free
-  const maxFlow = request.flowRateIn - (10010 * request.operations.length);
+  const maxFlow = request.flowRateIn - (10 * request.operations.length);
+  var opLeft = request.operations.length;
   var currFlow = 0;
   return request.operations.map(operation => {
-    currFlow += maxVal(operation);
+    const flow = overload(currFlow, maxVal(operation), maxFlow, opLeft);
+    currFlow += flow;
+    opLeft--;
     return {
       operationId: operation.id,
-      flowRate: overload(currFlow, maxVal(operation), maxFlow), //find flow rate
+      flowRate: flow, //find flow rate
     }
   })
 }
