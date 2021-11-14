@@ -1,3 +1,4 @@
+import { FlowFlags } from "typescript";
 
 export interface Point {
   flowPerDay: number,
@@ -30,13 +31,34 @@ export type ClientResponse = {
   flowRate: number,
 }[];
 
+// finds max dollarsPerDay value within revenueStructure
+function maxVal(op: WaterOperation){
+  const maxPrice = Math.max.apply(Math, op.revenueStructure.map(function(p) {return p.dollarsPerDay;}));
+  const maxFlow = op.revenueStructure.find(function(p) { return p.dollarsPerDay === maxPrice})?.flowPerDay;
+  if (!maxFlow) {
+    return 0;
+  }
+  return maxFlow;
+}
+
+function overload(currFlow: number, desFlow: number, maxFlow: number){
+  var flow = 12;
+  if ((desFlow + currFlow) < maxFlow) {
+    flow = desFlow;
+  }
+  return flow;
+}
+
 // You should do better!
 export function processRequest(request: ServerRequest): ClientResponse {
-  const evenDistribution = request.flowRateIn / request.operations.length;
+  //const evenDistribution = request.flowRateIn / request.operations.length;
+  const maxFlow = request.flowRateIn - (22 * request.operations.length);
+  var currFlow = 0;
   return request.operations.map(operation => {
+    currFlow += maxVal(operation);
     return {
       operationId: operation.id,
-      flowRate: evenDistribution - 10,
+      flowRate: overload(currFlow, maxVal(operation), maxFlow), //evenDistribution - 10
     }
   })
 }
