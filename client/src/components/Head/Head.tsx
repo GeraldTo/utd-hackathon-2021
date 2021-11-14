@@ -12,7 +12,7 @@ export interface HeadProps {
 export default function Head(props: HeadProps) {
   return (
     <Navbar bg="primary" expand="lg">
-      <Navbar.Brand className={styles.Head}>UTD Hackathon</Navbar.Brand>
+      <Navbar.Brand className={styles.Title}>UTD Hackathon</Navbar.Brand>
     </Navbar>
   )
 }

@@ -9,6 +9,7 @@ import {
 import { Tabs, Tab } from 'react-bootstrap'
 import DataTab from './DataTab/DataTab'
 import LogTab from './LogTab/LogTab'
+import styles from './Body.module.css'
 
 export interface BodyProps {
   classes: ClassNameMap
@@ -57,7 +58,7 @@ export default function Body(props: BodyProps) {
     }
   }, [])
   return (
-    <div className={props.classes.body}>
+    <div className={styles.Body}>
       <Tabs defaultActiveKey="data">
         {' '}
         <Tab eventKey="data" title="Data">
