@@ -2,6 +2,7 @@ import * as React from 'react'
 import { ServerRequest } from '../../../optimization'
 import styles from './DataTab.module.css'
 import Select from 'react-select'
+import Graph from './Graph'
 
 export interface RequestProps {
   request: null | ServerRequest
@@ -25,7 +26,6 @@ export default function Request(props: RequestProps) {
     const currentObj = props.request.operations.filter((obj) => {
       return obj.id === current
     })
-    console.log(currentObj[0])
     return (
       <div className={styles.Box}>
         <h1>Request</h1>
@@ -41,6 +41,7 @@ export default function Request(props: RequestProps) {
             setCurrent(event?.value !== undefined ? event?.value : '')
           }
         />
+        {currentObj[0] && <Graph value={currentObj[0]} />}
       </div>
     )
   } else

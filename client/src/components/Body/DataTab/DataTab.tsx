@@ -21,10 +21,6 @@ export default function DataTab(props: DataTabProps) {
     <div className={styles.DataTab}>
       <Request request={props.request} />
       <BodyText
-        data={props.request}
-        divText={'1.) Server Sends Current State of the System:'}
-      />
-      <BodyText
         data={props.response}
         divText={'2.) Client Sends Solution to the Optimization:'}
       />
