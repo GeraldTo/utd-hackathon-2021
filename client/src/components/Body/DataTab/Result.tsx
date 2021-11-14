@@ -12,7 +12,7 @@ export default function Result(props: ResultProps) {
     const desired = Object.keys(props.result).filter((e) => e !== 'type')
     const el = props.result! as object
     return (
-      <div className={styles.Box}>
+      <div className={styles.Box2}>
         <h1>Results</h1>
         <Table striped bordered hover>
           <thead>
