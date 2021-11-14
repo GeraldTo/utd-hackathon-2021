@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { ClientResponse, ServerRequest } from '../../../optimization'
 import { Pie } from 'react-chartjs-2'
+import styles from './DataTab.module.css'
 
 export interface ResponseProps {
   response: null | ClientResponse
@@ -28,7 +29,8 @@ export default function Response(props: ResponseProps) {
       ],
     }
     return (
-      <div>
+      <div className={styles.Box}>
+        <h1>Response</h1>
         <Pie data={data} />
       </div>
     )
