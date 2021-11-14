@@ -9,6 +9,7 @@ import {
 import BodyText from './BodyText'
 import Request from './Request'
 import styles from './DataTab.module.css'
+import Response from './Response'
 import { request } from 'http'
 
 export interface DataTabProps {
@@ -21,10 +22,7 @@ export default function DataTab(props: DataTabProps) {
   return (
     <div className={styles.DataTab}>
       <Request request={props.request} />
-      <BodyText
-        data={props.response}
-        divText={'2.) Client Sends Solution to the Optimization:'}
-      />
+      <Response response={props.response} request={props.request} />
       <Result result={props.result} />
     </div>
   )
