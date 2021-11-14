@@ -47,6 +47,7 @@ export default function Request(props: RequestProps) {
             setCurrent(event?.value !== undefined ? event?.value : '')
           }
         />
+        
         {currentObj[0] && <Graph value={currentObj[0]} />}
       </div>
     )

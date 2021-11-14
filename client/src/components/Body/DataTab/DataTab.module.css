@@ -3,6 +3,34 @@
 }
 
 .Box {
+  width: 50%;
+  height: 700px;
+  float: left;
+  justify-content: center;
   border-style: solid;
   padding: 1rem 2rem;
+}
+.box :first-child {
+  align-self: center;
+}
+
+.Box2 {
+  border-style: solid;
+  padding: 1rem 2rem;
+}
+.wrapper {
+  border: 1px solid blue;
+  display: table;
+}
+.leftBox {
+  border-style: solid;
+  padding: 1rem 2rem;
+  width: 50%;
+  display: table-cell;
+}
+.rightBox {
+  border-style: solid;
+  padding: 1rem 2rem;
+  width: 50%;
+  display: table-cell;
 }
