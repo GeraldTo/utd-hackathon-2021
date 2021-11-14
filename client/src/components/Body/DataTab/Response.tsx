@@ -33,7 +33,7 @@ export default function Response(props: ResponseProps) {
     return (
       <div className={styles.Box}>
         <h1>Response</h1>
-        <Pie data={data} options={{responsive: false,}}/>
+        <Pie data={data} options={{responsive: true,maintainAspectRatio: true}}/>
       </div>
     )
   } else return <div></div>

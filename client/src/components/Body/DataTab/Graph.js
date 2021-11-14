@@ -34,13 +34,14 @@ const genData = function (props) {
 };
 
 const options = {
+    responsive: true,
+    maintainAspectRatio: true,
     scales: {
         xAxes: [{
-            type: 'time',
             display: true,
             scaleLabel: {
                 display: true,
-                labelString: 'Date'
+                labelString: 'X-axis'
             },
             ticks: {
                 major: {
@@ -53,9 +54,9 @@ const options = {
             display: true,
             scaleLabel: {
                 display: true,
-                labelString: 'value'
+                labelString: 'Y-axis'
             }
-        }]
+        }],
     }
 };
 
