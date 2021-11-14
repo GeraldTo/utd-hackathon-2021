@@ -5,8 +5,10 @@ import {
   processRequest,
   ServerRequest,
   ServerResponse,
-} from '../optimization'
-import BodyText from './BodyText'
+} from '../../optimization'
+import { Tabs, Tab } from 'react-bootstrap'
+import DataTab from './DataTab/DataTab'
+import LogTab from './LogTab/LogTab'
 
 export interface BodyProps {
   classes: ClassNameMap
@@ -14,8 +16,8 @@ export interface BodyProps {
 
 export default function Body(props: BodyProps) {
   const [request, setRequest] = React.useState<null | ServerRequest>(null)
-  const [result, setResult] = React.useState<null | ServerResponse>(null)
   const [response, setResponse] = React.useState<null | ClientResponse>(null)
+  const [result, setResult] = React.useState<null | ServerResponse>(null)
   React.useEffect(() => {
     // const ws = new WebSocket('ws://localhost:9172');
     // eslint-disable-next-line no-restricted-globals
@@ -56,15 +58,15 @@ export default function Body(props: BodyProps) {
   }, [])
   return (
     <div className={props.classes.body}>
-      <BodyText
-        data={request}
-        divText={'1.) Server Sends Current State of the System:'}
-      />
-      <BodyText
-        data={response}
-        divText={'2.) Client Sends Solution to the Optimization:'}
-      />
-      <BodyText data={result} divText={'3.) Server Sends Result:'} />
+      <Tabs defaultActiveKey="data">
+        {' '}
+        <Tab eventKey="data" title="Data">
+          <DataTab request={request} response={response} result={result} />
+        </Tab>
+        <Tab eventKey="logs" title="Logs">
+          <LogTab />
+        </Tab>
+      </Tabs>
     </div>
   )
 }

@@ -1,5 +1,9 @@
 import * as React from 'react'
-import { ClientResponse, ServerRequest, ServerResponse } from '../optimization'
+import {
+  ClientResponse,
+  ServerRequest,
+  ServerResponse,
+} from '../../../optimization'
 
 export interface BodyTextProps {
   data: null | ServerRequest | ServerResponse | ClientResponse
@@ -11,6 +15,7 @@ export default function BodyText(props: BodyTextProps) {
     <div>
       <div>{props.divText}</div>
       <textarea
+        readOnly
         rows={10}
         cols={150}
         value={JSON.stringify(props.data, undefined, 2)}

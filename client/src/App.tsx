@@ -1,13 +1,12 @@
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import React from 'react'
-import Head from './Head/Head'
-import Body from './Body/Body'
+import Head from './components/Head/Head'
+import Body from './components/Body/Body'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     title: {
-      flexGrow: 1,
-      textAlign: 'left',
+      color: 'white !important',
     },
     body: {
       padding: theme.spacing(2),
