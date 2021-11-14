@@ -32,10 +32,10 @@ export default function Request(props: RequestProps) {
     return (
       <div className={styles.Box}>
         <h1>Request</h1>
-        <h2>
+        <h3>
           Max Flow Rate In: {Math.round(props.request.flowRateIn * 100) / 100}
-        </h2>
-        <h2>Max Possible Income: ${Math.round(maxRevenue * 100) / 100}</h2>
+        </h3>
+        <h3>Max Possible Income: ${Math.round(maxRevenue * 100) / 100}</h3>
         <Select
           options={options}
           value={
@@ -47,7 +47,7 @@ export default function Request(props: RequestProps) {
             setCurrent(event?.value !== undefined ? event?.value : '')
           }
         />
-        
+
         {currentObj[0] && <Graph value={currentObj[0]} />}
       </div>
     )
