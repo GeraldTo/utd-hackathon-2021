@@ -33,27 +33,11 @@ export type ClientResponse = {
 
 // finds max dollarsPerDay value within revenueStructure
 function maxVal(op: WaterOperation, percLim : number){
-  // ignore values after value dips into negative
-  var valList: number[] = [];
-  var negativeFlag = false;
-  op.revenueStructure.forEach(e =>{
-    if (e.dollarsPerDay < -1){
-      negativeFlag = true
-    }
-    if (!negativeFlag){
-      valList.push(e.dollarsPerDay)
-    }
-  });
-  // get max price from value list
-  const maxPrice = Math.max(...valList);
-
-  // find flow value that matches price
+  const maxPrice = Math.max.apply(Math, op.revenueStructure.map(function(p) {return p.dollarsPerDay;}));
   var maxFlow = op.revenueStructure.find(function(p) { return p.dollarsPerDay === maxPrice})?.flowPerDay;
   if (!maxFlow) {
     return 0;
   }
-
-  // check that maxflow is below the percent limit
   if (maxFlow > percLim)
   {
     maxFlow = percLim;
