@@ -34,7 +34,6 @@ const genData = function (props) {
 };
 
 const options = {
-
 };
 
 const Graph = (props) => {
@@ -50,7 +49,7 @@ const Graph = (props) => {
         <>
             <div className='header'>
                 <h2 className='title'>{props.value.name}</h2>
-            
+
             </div>
             <Line data={data} options={options} />
         </>

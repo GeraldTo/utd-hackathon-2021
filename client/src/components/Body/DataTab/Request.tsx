@@ -29,7 +29,9 @@ export default function Request(props: RequestProps) {
     return (
       <div className={styles.Box}>
         <h1>Request</h1>
-        <h2>Flow Rate In: {props.request.flowRateIn}</h2>
+        <h2>
+          Flow Rate In: {Math.round(props.request.flowRateIn * 100) / 100}
+        </h2>
         <Select
           options={options}
           value={

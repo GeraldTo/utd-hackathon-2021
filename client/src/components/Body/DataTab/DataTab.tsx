@@ -1,5 +1,6 @@
 import { styled } from '@material-ui/core'
 import * as React from 'react'
+import Result from './Result'
 import {
   ClientResponse,
   ServerRequest,
@@ -8,6 +9,7 @@ import {
 import BodyText from './BodyText'
 import Request from './Request'
 import styles from './DataTab.module.css'
+import { request } from 'http'
 
 export interface DataTabProps {
   request: null | ServerRequest
@@ -23,7 +25,7 @@ export default function DataTab(props: DataTabProps) {
         data={props.response}
         divText={'2.) Client Sends Solution to the Optimization:'}
       />
-      <BodyText data={props.result} divText={'3.) Server Sends Result:'} />
+      <Result result={props.result} />
     </div>
   )
 }
