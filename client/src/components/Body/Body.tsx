@@ -52,6 +52,7 @@ export default function Body() {
       ws.close()
     }
   }, [])
+  // displays tabs on main page for data and logs
   return (
     <div className={styles.Body}>
       <Tabs defaultActiveKey="data">
@@ -59,7 +60,7 @@ export default function Body() {
           <DataTab request={request} response={response} result={result} />
         </Tab>
         <Tab eventKey="logs" title="Logs">
-          <LogTab />
+          <LogTab response={response}/>
         </Tab>
       </Tabs>
     </div>
