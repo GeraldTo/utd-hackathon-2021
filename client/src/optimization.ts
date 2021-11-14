@@ -43,7 +43,10 @@ function maxVal(op: WaterOperation){
 
 // ensures that the flow limit is not breached
 function overload(currFlow: number, desFlow: number, maxFlow: number, opLeft: number){
+  // minimum flow is equal split of residual maxFlow
   var flow = (maxFlow - currFlow) / opLeft;
+
+  // check if desired flow exceeds max flow
   if ((desFlow + currFlow) < maxFlow) {
     flow = desFlow;
   }
