@@ -1,3 +1,4 @@
+import { styled } from '@material-ui/core'
 import * as React from 'react'
 import {
   ClientResponse,
@@ -5,6 +6,8 @@ import {
   ServerResponse,
 } from '../../../optimization'
 import BodyText from './BodyText'
+import Request from './Request'
+import styles from './DataTab.module.css'
 
 export interface DataTabProps {
   request: null | ServerRequest
@@ -14,7 +17,8 @@ export interface DataTabProps {
 
 export default function DataTab(props: DataTabProps) {
   return (
-    <div>
+    <div className={styles.DataTab}>
+      <Request request={props.request} />
       <BodyText
         data={props.response}
         divText={'2.) Client Sends Solution to the Optimization:'}
