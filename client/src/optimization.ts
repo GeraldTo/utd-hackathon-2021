@@ -43,7 +43,7 @@ function maxVal(op: WaterOperation){
 
 // ensures that the flow limit is not breached
 function overload(currFlow: number, desFlow: number, maxFlow: number){
-  var flow = 12;
+  var flow = 10000;
   if ((desFlow + currFlow) < maxFlow) {
     flow = desFlow;
   }
@@ -53,7 +53,7 @@ function overload(currFlow: number, desFlow: number, maxFlow: number){
 // uses naive greedy algorithm to calculate flow per operation
 export function processRequest(request: ServerRequest): ClientResponse {
   //calculate maximum flow, leave some flow free
-  const maxFlow = request.flowRateIn - (22 * request.operations.length);
+  const maxFlow = request.flowRateIn - (10010 * request.operations.length);
   var currFlow = 0;
   return request.operations.map(operation => {
     currFlow += maxVal(operation);
