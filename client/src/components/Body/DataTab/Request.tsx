@@ -26,12 +26,16 @@ export default function Request(props: RequestProps) {
     const currentObj = props.request.operations.filter((obj) => {
       return obj.id === current
     })
+    const maxRevenue = currentObj[0]
+      ? Math.max(...currentObj[0].revenueStructure.map((e) => e.dollarsPerDay))
+      : 0
     return (
       <div className={styles.Box}>
         <h1>Request</h1>
         <h2>
-          Flow Rate In: {Math.round(props.request.flowRateIn * 100) / 100}
+          Max Flow Rate In: {Math.round(props.request.flowRateIn * 100) / 100}
         </h2>
+        <h2>Max Possible Income: ${Math.round(maxRevenue * 100) / 100}</h2>
         <Select
           options={options}
           value={

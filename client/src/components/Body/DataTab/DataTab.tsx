@@ -6,7 +6,6 @@ import {
   ServerRequest,
   ServerResponse,
 } from '../../../optimization'
-import BodyText from './BodyText'
 import Request from './Request'
 import styles from './DataTab.module.css'
 import Response from './Response'
